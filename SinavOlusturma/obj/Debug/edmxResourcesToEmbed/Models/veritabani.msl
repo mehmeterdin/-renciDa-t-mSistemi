@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gorseldbModelStoreContainer" CdmEntityContainer="gorseldbEntities">
+    <EntitySetMapping Name="Asistan">
+      <EntityTypeMapping TypeName="gorseldbModel.Asistan">
+        <MappingFragment StoreEntitySet="Asistan">
+          <ScalarProperty Name="AsistanID" ColumnName="AsistanID" />
+          <ScalarProperty Name="AsistanAdi" ColumnName="AsistanAdi" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dersler">
+      <EntityTypeMapping TypeName="gorseldbModel.Dersler">
+        <MappingFragment StoreEntitySet="Dersler">
+          <ScalarProperty Name="DersKodu" ColumnName="DersKodu" />
+          <ScalarProperty Name="DersAdi" ColumnName="DersAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Derslik">
+      <EntityTypeMapping TypeName="gorseldbModel.Derslik">
+        <MappingFragment StoreEntitySet="Derslik">
+          <ScalarProperty Name="DerslikID" ColumnName="DerslikID" />
+          <ScalarProperty Name="DerslikAdi" ColumnName="DerslikAdi" />
+          <ScalarProperty Name="Kapasite" ColumnName="Kapasite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Donem">
+      <EntityTypeMapping TypeName="gorseldbModel.Donem">
+        <MappingFragment StoreEntitySet="Donem">
+          <ScalarProperty Name="DonemID" ColumnName="DonemID" />
+          <ScalarProperty Name="DonemAdi" ColumnName="DonemAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Liste">
+      <EntityTypeMapping TypeName="gorseldbModel.Liste">
+        <MappingFragment StoreEntitySet="Liste">
+          <ScalarProperty Name="ListeID" ColumnName="ListeID" />
+          <ScalarProperty Name="SinavID" ColumnName="SinavID" />
+          <ScalarProperty Name="DerslikID" ColumnName="DerslikID" />
+          <ScalarProperty Name="AsistanID" ColumnName="AsistanID" />
+          <ScalarProperty Name="OgrString" ColumnName="OgrString" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sinav">
+      <EntityTypeMapping TypeName="gorseldbModel.Sinav">
+        <MappingFragment StoreEntitySet="Sinav">
+          <ScalarProperty Name="SinavID" ColumnName="SinavID" />
+          <ScalarProperty Name="DersKodu" ColumnName="DersKodu" />
+          <ScalarProperty Name="DonemID" ColumnName="DonemID" />
+          <ScalarProperty Name="TarihID" ColumnName="TarihID" />
+          <ScalarProperty Name="SinavTuru" ColumnName="SinavTuru" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tarihler">
+      <EntityTypeMapping TypeName="gorseldbModel.Tarihler">
+        <MappingFragment StoreEntitySet="Tarihler">
+          <ScalarProperty Name="TarihID" ColumnName="TarihID" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
